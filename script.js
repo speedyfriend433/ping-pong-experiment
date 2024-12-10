@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const game = document.getElementById("game");
 const ball = document.getElementById("ball");
 const playerPaddle = document.getElementById("playerPaddle");
@@ -80,7 +81,7 @@ function gameLoop() {
   updateAiPaddle();
   requestAnimationFrame(gameLoop);
 }
-
+});
 game.addEventListener("mousemove", updatePlayerPaddle);
 gameLoop();
 
