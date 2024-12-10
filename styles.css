@@ -25,12 +25,21 @@ body {
   border-radius: 50%;
 }
 
-#paddle {
+#playerPaddle, #aiPaddle {
   position: absolute;
-  bottom: 20px;
   width: 100px;
   height: 10px;
   background-color: #4caf50;
+}
+
+#playerPaddle {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#aiPaddle {
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
