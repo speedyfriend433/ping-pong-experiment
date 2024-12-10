@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 const game = document.getElementById("game");
 const ball = document.getElementById("ball");
+
+if (!playerPaddle || !aiPaddle || !ball) {
+  console.error("One or more essential game elements are missing!");
+  return;
+}
+  
 const playerPaddle = document.getElementById("playerPaddle");
 const aiPaddle = document.getElementById("aiPaddle");
 const trajectoryCanvas = document.getElementById("trajectory");
